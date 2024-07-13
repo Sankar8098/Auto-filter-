@@ -15,8 +15,8 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '23990433'))
+API_HASH = environ.get('API_HASH', 'e6c4b6ee1933711bc4da9d7d17e1eb20')
 BOT_TOKEN = environ.get('BOT_TOKEN', '7077611383:AAFaNgJvf8uNlKl6RYffzOh_lsjwuCZcwiw')
 
 PICS = (environ.get('PICS', 'https://graph.org/file/2518d4eb8c88f8f669f4c.jpg https://graph.org/file/d6d9d9b8d2dc779c49572.jpg https://graph.org/file/4b04eaad1e75e13e6dc08.jpg https://graph.org/file/05066f124a4ac500f8d91.jpg https://graph.org/file/2c64ed483c8fcf2bab7dd.jpg')).split() #SAMPLE PIC
@@ -26,9 +26,9 @@ VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/cosmic_freak")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/movie7xchat')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001619818259').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001870015374'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/SK_MoviesOffl')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001818253894').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rebecca9710:CSWG3pOAVs2r4w4b@autofilter2.fa5sbap.mongodb.net/?retryWrites=true&w=majority&appName=Autofilter2")
 
 #Auto approve 
@@ -45,14 +45,14 @@ AI_LOGS = int(environ.get("AI_LOGS", "-1001868871195")) #GIVE YOUR NEW LOG CHANN
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "public")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001868871195'))
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1001868871195'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001868871195'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001870015374'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1001870015374'))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001870015374'))
 URL = environ.get('URL', 'mytestbot-jvdfhbj.com') # your deployment url
 STICKERS_IDS = ('CAACAgUAAxkBAAEC5s1mfmbnUx4f7jYODXqmoDo_QltzLQACmw4AAl3VAVYieASlHlskATUE').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001868871195'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001870015374'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/How_to_Download_7x/35")
 SHORTENER_API = environ.get("SHORTENER_API", "")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", '')
@@ -69,7 +69,7 @@ YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
-auth_channel = environ.get('AUTH_CHANNEL', '-1001572271892')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001828551401')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001953724858'))
 request_channel = environ.get('REQUEST_CHANNEL', '')
