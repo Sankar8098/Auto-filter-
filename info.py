@@ -26,7 +26,7 @@ VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/cosmic_freak")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001870015374'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001870015374'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/SK_MoviesOffl')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001818253894').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rebecca9710:CSWG3pOAVs2r4w4b@autofilter2.fa5sbap.mongodb.net/?retryWrites=true&w=majority&appName=Autofilter2")
