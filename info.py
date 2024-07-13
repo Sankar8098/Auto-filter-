@@ -29,7 +29,7 @@ USERNAME = environ.get('USERNAME', "https://telegram.me/cosmic_freak")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/movie7xchat')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001619818259').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rebecca9710:CSWG3pOAVs2r4w4b@autofilter2.fa5sbap.mongodb.net/?retryWrites=true&w=majority&appName=Autofilter2")
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
